@@ -2,9 +2,9 @@ module Lita
   module Handlers
     class AisatsuPolice < Handler
       # insert handler code here
-      route /^lita\s+.*(おはよう)/, :ohayo, help: { 'lita TEXT': 'Lita hepls you.' }
-      route /^lita\s+.*(こんにちは)/, :konichiwa, help: { 'lita TEXT': 'Lita hepls you.' }
-      route /^lita\s+.*(こんばんは)/, :kobawa, help: { 'lita TEXT': 'Lita hepls you.' }
+      route /(おはよう)/, :ohayo, help: { 'lita TEXT': 'Lita hepls you.' }
+      route /(こんにちは)/, :konichiwa, help: { 'lita TEXT': 'Lita hepls you.' }
+      route /(こんばんは)/, :kobawa, help: { 'lita TEXT': 'Lita hepls you.' }
 
       def ohayo(response)
         now_hour = DateTime.now.hour
