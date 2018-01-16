@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gem "lita"
 gem 'lita-slack'
 
-gem 'lita-repeat', path: 'handlers/lita-repeat'
+# gem 'lita-repeat', path: 'handlers/lita-repeat'
 gem 'lita-aisatsu-police', path: 'handlers/lita-aisatsu-police'
 
 # Uncomment to use the HipChat adapter

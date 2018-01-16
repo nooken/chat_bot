@@ -3,7 +3,7 @@ module Lita
     class AisatsuPolice < Handler
       # insert handler code here
       route /^lita\s+.*(おはよう)/, :ohayo, help: { 'lita TEXT': 'Lita hepls you.' }
-      route /^lita\s+.*(こんにちは)/, :konnichiwa, help: { 'lita TEXT': 'Lita hepls you.' }
+      route /^lita\s+.*(こんにちは)/, :konichiwa, help: { 'lita TEXT': 'Lita hepls you.' }
       route /^lita\s+.*(こんばんは)/, :kobawa, help: { 'lita TEXT': 'Lita hepls you.' }
 
       def ohayo(response)
